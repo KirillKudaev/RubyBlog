@@ -1,0 +1,196 @@
+.headerBackground {
+	background: url("http://www.finiks.at/hhcms15/templates/jm-creative/images/bg.jpg");
+	height: 110px;
+	background-size:cover
+}
+
+.post {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 22px;
+
+  	animation-duration: 2s;
+	animation-name: slidein;
+
+
+
+	.title {
+		border-bottom: 1px solid #999;	/* 1 pixel line under our title */
+		font-size: 40px;
+		font-family: Arial, sans-serif;
+		color: #308A5D;
+		text-align: center;
+		margin-bottom: 20px;
+		margin: 15px;
+	}
+
+	h3 {
+		border-bottom: 1px solid #999;
+	}
+
+	.comment-list .comment {
+		font-size: 14px;
+		border: 1px solid #999;
+		padding: 15px;
+		border-radius: 12px;
+		background-color: #d1d1d1; 
+		font-style: italic;
+		text-align: left;
+		position: relative;
+
+		.date {
+			color: #308A5D;
+			font-size: 10px;
+		}
+
+		.fb-like{
+				position: absolute;
+    			right: 0;
+    	
+				
+		}
+	}
+}
+
+
+body {
+	/* setting image to be a background */
+    background-image: url("http://colonialflowers.net/wp-content/uploads/2013/04/wood-background.png");
+}
+
+p {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid #999;
+	margin: 40px;
+	padding: 15px;
+	border-radius: 12px;
+	background-color: #d1d1d1; 
+	font-style: arial;
+}
+
+.fb-comments {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*lets control the steps in a CSS animation sequence*/
+
+@keyframes slidein {     
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 33%;
+    width: 100%;
+  }
+}
+
+
+
+.text-field {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.text-area {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.submit-button {
+	margin: 30px;
+	text-align: center;
+}
+
+.create-post-label {
+	font-size: 36px;
+	text-align: center;
+	margin: 50px;
+}
+
+.body {
+	font-size: 24px;
+	text-align: center;
+}
+
+.title {
+	font-size: 24px;
+	text-align: center;
+}
+
+.edit-delete-button {
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid #999;
+	margin: 15px;
+	padding: 5px;
+	border-radius: 16px;
+	background-color: #d1d1d1; 
+	font-style: arial;
+	margin-left: 20px;
+	margin-right: 1070px;
+}
+
+
+
+
+
+.text-field-comment{
+	margin-top: 0px;
+	text-align: center;
+}
+
+.submit-button-comment {
+	text-align: center;
+}
+
+.post-menu{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 36px;
+	border: 1px solid #999;
+	margin-top: 60px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 15px;
+	border-radius: 12px;
+	background-color: #d1d1d1; 
+	font-style: arial;
+
+
+}
+
+
+.post-menu{
+	position: relative;
+
+	.date {
+		color: #308A5D;
+		font-size: 14px;
+	}
+
+	.fb-like {
+		position: absolute;
+	    right: 0;
+
+	}
+}
+
+
+.fb-comments{
+	border: 1px solid #999;
+	margin: 40px;
+	padding: 15px;
+	border-radius: 12px;
+	background-color: #d1d1d1;
+	left: 24%;
+
+}
+

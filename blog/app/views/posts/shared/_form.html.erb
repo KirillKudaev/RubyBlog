@@ -1,0 +1,7 @@
+<%= form_for @post do |f| %>
+	<div class='title'>Title</div>
+	<div class='text-field'><%= f.text_area(:title, :cols => '50', :rows => '2') %></div>
+	<div class='body'>Body</div>
+	<div class='text-area'><%= f.text_area(:body, :cols => '50', :rows => '10') %></div>
+	<div class='submit-button'><%= f.submit %></div>
+<% end %>

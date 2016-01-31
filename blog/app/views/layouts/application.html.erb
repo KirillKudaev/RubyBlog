@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+<%  if  flash[:alert]  %>  
+   <p  style="color:  #F00"><%=  flash[:alert]  %></p>  
+<%  end  %>  
+
+
+<%  if  flash[:notice]  %>  
+   <p  style="color:  #0F0"><%=  flash[:notice]  %></p>  
+<%  end  %>  
+
+<%= yield %>
+
+</body>
+</html>

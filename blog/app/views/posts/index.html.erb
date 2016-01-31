@@ -1,0 +1,22 @@
+	<% @posts.each do |post| %>
+	<div class='menu'>
+		 <div class = 'post-menu'><%= link_to(post.title, post_path(post)) %>
+		 <span class='date'><%= post.created_at.strftime("%Y-%m-%d") %></span>
+		 <span class="fb-like" data-href="https://www.facebook.com/photo.php?fbid=1145814342098927&set=a.596518453695188.144269.100000111171707&type=3&theater" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></span>
+		 </div>
+		<% end %>
+	</div>
+
+	<div class="fb-comments" data-href="https://www.facebook.com/photo.php?fbid=1099270593419969&amp;set=a.596518453695188.144269.100000111171707&amp;type=3" data-numposts="5"></div>
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

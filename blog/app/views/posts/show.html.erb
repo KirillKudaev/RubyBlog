@@ -1,0 +1,36 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class='headerBackground'></div>
+<div class='edit-delete-button'><%= link_to('Edit Post', edit_post_path(@post)) %>
+<%= link_to('Delete Post', post_path(@post), confirm: 'Are you sure?', method: :delete) %></div>
+<a class = 'edit-delete-button' href="http://cs-vs5:3009/">Back To Home Page</a>
+<div class='post'>
+	<div class='title'><%= @post.title %></div>
+	<div class='body'><%=  render_markdown(@post.body) %></div>
+	<div class='comment-list'>
+		<h3>Comments</h3>
+		<% @post.comments.each do |comment| %>
+			<p class='comment'>
+				<%= comment.title %>
+				<span class='date'><%= comment.created_at.strftime("%Y-%m-%d") %></span>
+				<span class="fb-like" data-href="http://cs-vs5:3009/posts" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></span>
+			</p>
+		<% end %>
+	</div>
+
+	<%= form_for [@post, @comment] do |f| %>
+		<div class='text-field-comment'><%= f.text_area(:title, :cols => '50', :rows => '2') %></div>
+
+		<div class='submit-button-comment'><%= f.submit %></div>
+	<% end %>
+
+
+
+</div>
